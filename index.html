@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>手机网页合集</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: #f0f0f0;
+            min-height: 100vh;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .phone-frame {
+            background: #fff;
+            border-radius: 30px;
+            padding: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+            position: relative;
+        }
+
+        .phone-frame::before {
+            content: '';
+            position: absolute;
+            top: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 6px;
+            background: #333;
+            border-radius: 3px;
+        }
+
+        .iframe-container {
+            border-radius: 25px;
+            overflow: hidden;
+            background: white;
+        }
+
+        iframe {
+            width: 375px;  /* 标准手机宽度 */
+            height: 600px;
+            border: none;
+            transform-origin: 0 0;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 第一个手机 -->
+        <div class="phone-frame">
+            <div class="iframe-container">
+                <iframe src="https://haokawx.lot-ml.com/Product/Index/150352" scrolling="yes"></iframe>
+            </div>
+        </div>
+
+        <!-- 第二个手机 -->
+        <div class="phone-frame">
+            <div class="iframe-container">
+                <iframe src="https://m.haokafenxiao.cn/h5/index?shop_id=MTAyODM=" scrolling="yes"></iframe>
+            </div>
+        </div>
+
+        <!-- 第三个手机 -->
+        <div class="phone-frame">
+            <div class="iframe-container">
+                <iframe src="https://hk.yunhaoka.cn/#/pages/micro_store/index?agent_id=7e3974de1465e94c" scrolling="yes"></iframe>
+            </div>
+        </div>
+
+        <!-- 第四个手机 -->
+        <div class="phone-frame">
+            <div class="iframe-container">
+                <iframe src="https://card.wlyu.cn/index.php?s=/Home/Mobile/All/index.html&jxscode=644-9118" scrolling="yes"></iframe>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
